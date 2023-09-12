@@ -1,0 +1,111 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="cccs | links">
+  <main>
+    <header class="logo">
+      <img src="/logo.ico" class="logo-img" alt="logo - cccs" />
+    </header>
+    <p class="instructions">"CON CRISTO SOMOS MAS QUE VENCEDORES"</p>
+
+    <ul role="list" class="link-card-grid">
+      <Card
+        href="#"
+        title="Sitio Web"
+        body="Para mas informacion visita nuestro sitio web, donde puedes encontrar mas manerial que bendecira tu vida."
+      />
+      <Card
+        href="https://youtube.com/@CCCSOficial"
+        title="Youtube"
+        body="Visita nuestro canal de youtube y edifica tu vida."
+      />
+      <Card
+        href="https://forms.gle./cxxTzfppdPALfwVV6"
+        title="Donaciones y Reportes"
+        body="Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque Dios ama al dador alegre. 2 cori. 9:7"
+      />
+      <Card
+        href="https://fb.me/cccsoficial"
+        title="Comunidad Cristiana"
+        body="Ven a saludar a nuestra increíble comunidad. ❤️"
+      />
+    </ul>
+  </main>
+  <footer>
+    <p class="footer-p">
+      Copyright 2023 | Derechos Reservados <code>dacoapp</code>
+    </p>
+  </footer>
+</Layout>
+
+<style>
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+  }
+
+  .logo-img {
+    width: 200px;
+    border-radius: 100%;
+  }
+
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 52%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-p {
+    color: #ffffff;
+    font-weight: bold;
+  }
+</style>
